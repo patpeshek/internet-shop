@@ -11,39 +11,19 @@
 
 </div>
 
+{% for product in products %}
 <div class="productList">
 <div class="product">
-    <img src="https://i.ibb.co/2Kyfx8L/kandinsky-download-1718811608686.png"/>
+    <img src="{{ product.image_url }}"/>
     <div>
-        <h2>Смарт-часы</h2>
-        <p>Эти часы — не просто стильный аксессуар, это настоящий технологический шедевр, который станет незаменимым помощником в повседневной жизни. Они сочетают в себе все самые передовые функции, которые сделают вашу жизнь ещё более комфортной и безопасной.</p>
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.description }}</p>
     </div>
-    <div class="price">
-        <h3>19 990 ₽</h3>
-        <button>Купить</button>
-    </div>
-</div>
 
-<div class="product">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1ILCnXo4vNx1w8T9kFFFgsP-XW_GNHaT85w&s"/>
-    <div>
-        <h2>Компьютер</h2>
-        <p>Древний компьютер (на нём динозавры играли)</p>
-    </div>
     <div class="price">
-        <h3>39 990 ₽</h3>
+        <h3>{{ product.price }} ₽</h3>
         <button>Купить</button>
     </div>
 </div>
-<div class="product">
-    <img src='https://www.vosem56.ru/upload/iblock/ed1/ed1c1f6785b1d1352869dad005cd0222.png'>
-    <div>
-        <h2>ПК</h2>
-        <p>oh my pccccc</p>
-    </div>
-    <div class="price">
-        <h3>69 990 ₽</h3>
-        <button>Купить</button>
-    </div>
-</div>
+{% endfor %}
 </div>
