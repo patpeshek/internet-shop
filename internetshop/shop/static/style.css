@@ -82,7 +82,7 @@ a {
 button {
     height: 50px;
     width: 100px;
-    border: 1px solid gray;
+    border: 1px solid lightgray;
     border-radius: 10px;
     cursor: pointer;
 }

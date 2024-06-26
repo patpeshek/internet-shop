@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
-from internetshop.shop.models import Product
+from .models import Product
 
 
 # Create your views here.
