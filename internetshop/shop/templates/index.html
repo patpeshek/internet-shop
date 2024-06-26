@@ -1,59 +1,39 @@
-<style>
-    * {
-        font-family: Arial;
-    }
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
 
-    h1 {
-        font-size: 40px;
-    }
+<div class="navigation">
 
-    img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .product {
-        border: 1px black solid;
-        display: flex;
-        height: 250px;
-        margin-top: 20px;
-    }
-
-    h2 {
-        width: 300px;
-    }
-
-    p {
-        width: 700px;
-    }
-
-    button {
-        margin-left: auto;
-    }
-</style>
-
-<h1>ZShop</h1>
+<h1><span style="color: #05016a">Z</span>Shop</h1>
 
 <a href="/">Главная</a>
 <a href="/products">Товары</a>
 <a href="/aboutus">О нас</a>
 
+</div>
+
+<div class="productList">
 <div class="product">
     <img src="https://i.ibb.co/2Kyfx8L/kandinsky-download-1718811608686.png"/>
     <div>
         <h2>Смарт-часы</h2>
         <p>Эти часы — не просто стильный аксессуар, это настоящий технологический шедевр, который станет незаменимым помощником в повседневной жизни. Они сочетают в себе все самые передовые функции, которые сделают вашу жизнь ещё более комфортной и безопасной.</p>
     </div>
-    <button>Купить</button>
+    <div class="price">
+        <h3>19 990 ₽</h3>
+        <button>Купить</button>
+    </div>
 </div>
 
 <div class="product">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1ILCnXo4vNx1w8T9kFFFgsP-XW_GNHaT85w&s"/>
     <div>
         <h2>Компьютер</h2>
-        <p>Lorem Ipsum</p>
+        <p>Древний компьютер (на нём динозавры играли)</p>
     </div>
-    <button>Купить</button>
+    <div class="price">
+        <h3>39 990 ₽</h3>
+        <button>Купить</button>
+    </div>
 </div>
 <div class="product">
     <img src='https://www.vosem56.ru/upload/iblock/ed1/ed1c1f6785b1d1352869dad005cd0222.png'>
@@ -61,4 +41,9 @@
         <h2>ПК</h2>
         <p>oh my pccccc</p>
     </div>
+    <div class="price">
+        <h3>69 990 ₽</h3>
+        <button>Купить</button>
+    </div>
+</div>
 </div>
