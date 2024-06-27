@@ -33,7 +33,7 @@ img {
     flex-direction: row;
 
     height: 60%;
-    margin-top: 20px;
+    margin-top: 10px;
     background-color: white;
     border-radius: 20px;
     padding: 10px;
@@ -89,5 +89,19 @@ button {
 
 .price {
     margin-left: auto;
+    text-align: center;
+}
+
+.filter {
+    height: 25px;
+    width: 120px;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    margin-top: 10px;
+    background-color: white;
+    margin-left: 1425px;
     text-align: center;
 }
