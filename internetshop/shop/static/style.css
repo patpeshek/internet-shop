@@ -24,8 +24,8 @@ h1 {
 }
 
 img {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
 }
 
 .product {
@@ -104,4 +104,18 @@ button {
     background-color: white;
     margin-left: 1425px;
     text-align: center;
+}
+.productDetails {
+    background: white;
+    display: flex;
+    flex-direction: row;
+
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.productPrice {
+    display: flex;
+    flex-direction: row;
 }
