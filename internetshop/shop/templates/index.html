@@ -5,9 +5,9 @@
 
 <h1><span style="color: #05016a">Z</span>Shop</h1>
 
-<a href="/">Главная</a>
-<a href="/products">Товары</a>
-<a href="/aboutus">О нас</a>
+<a class="navlink" href="/">Главная</a>
+<a class="navlink" href="/products">Товары</a>
+<a class="navlink" href="/aboutus">О нас</a>
 </div>
 <div class="filter">
     <h3>Фильтр</h3>
@@ -16,9 +16,11 @@
 <div class="productList">
 {% for product in products %}
 <div class="product">
-    <img src="{{ product.image_url }}"/>
-    <div>
-        <h2>{{ product.name }}</h2>
+    <img class="productPreview" src="{{ product.image_url }}"/>
+    <div style="width: 50%">
+        <a href="/product/{{ product.id }}">
+            <h2>{{ product.name }}</h2>
+        </a>
         <p>{{ product.description }}</p>
     </div>
 
