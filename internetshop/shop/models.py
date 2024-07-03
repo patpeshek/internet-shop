@@ -11,6 +11,6 @@ class Product(models.Model):
 
     speed = models.IntegerField(null=True, blank=True)
     size = models.IntegerField(null=True, blank=True)
-    material = models.IntegerField(null=True, blank=True)
+    material = models.TextField(null=True, blank=True)
     def __str__(self):
         return self.name

@@ -23,6 +23,11 @@
 </div>
 
 <div class="productDescription">
+    <h2>Описание:</h2>
+    <p>{{ product.description }}</p>
+</div>
+
+<div class="productDescription">
     <h2>Характеристики:</h2>
 
     {% if product.speed %}
@@ -35,9 +40,4 @@
         <p>Материал: {{ product.material }} </p>
     {% endif %}
 
-</div>
-
-<div class="productDescription">
-    <h2>Описание:</h2>
-    <p>{{ product.description }}</p>
 </div>
