@@ -15,7 +15,8 @@ def home(request):
 
     return render(request, "index.html", {
         'products': products,
-        'search': search,
+        'products_found': len(products) > 0,
+        'search': search if search else '',
     })
 def view_product(request, id):
     product = Product.objects.filter(id=id).first()
